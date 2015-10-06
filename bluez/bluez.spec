@@ -18,6 +18,7 @@ Patch2: 0001-Allow-using-obexd-without-systemd-in-the-user-sessio.patch
 Patch3: 0001-obex-Use-GLib-helper-function-to-manipulate-paths.patch
 Patch4: 0002-autopair-Don-t-handle-the-iCade.patch
 Patch5: 0004-agent-Assert-possible-infinite-loop.patch
+Patch100: 0001-Enable-experimental-dbus-apis.patch
 
 BuildRequires: git
 BuildRequires: dbus-devel >= 1.6

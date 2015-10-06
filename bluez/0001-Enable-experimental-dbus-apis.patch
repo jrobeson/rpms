@@ -1,0 +1,25 @@
+From 4049e48468b2ff9a27da33153e569d9a697a917c Mon Sep 17 00:00:00 2001
+From: Johnny Robeson <johnny@localmomentum.net>
+Date: Tue, 6 Oct 2015 02:58:17 -0400
+Subject: [PATCH] Enable experimental dbus apis
+
+---
+ src/bluetooth.service.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/bluetooth.service.in b/src/bluetooth.service.in
+index 35e9457..8204a79 100644
+--- a/src/bluetooth.service.in
++++ b/src/bluetooth.service.in
+@@ -5,7 +5,7 @@ Documentation=man:bluetoothd(8)
+ [Service]
+ Type=dbus
+ BusName=org.bluez
+-ExecStart=@libexecdir@/bluetoothd
++ExecStart=@libexecdir@/bluetoothd --experimental
+ NotifyAccess=main
+ #WatchdogSec=10
+ #Restart=on-failure
+-- 
+2.4.3
+
