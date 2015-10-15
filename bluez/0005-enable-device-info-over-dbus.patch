@@ -1,0 +1,22 @@
+From 0cef5a7996db8df569d04f2165f58e5aeed8441f Mon Sep 17 00:00:00 2001
+From: Luiz Augusto von Dentz <luiz.von.dentz@intel.com>
+Date: Wed, 7 Oct 2015 15:40:02 +0300
+Subject: deviceinfo: Enable external flag
+
+This enable attributes to be accessed over D-Bus.
+
+diff --git a/profiles/deviceinfo/deviceinfo.c b/profiles/deviceinfo/deviceinfo.c
+index a0e9951..6ee018c 100644
+--- a/profiles/deviceinfo/deviceinfo.c
++++ b/profiles/deviceinfo/deviceinfo.c
+@@ -191,6 +191,7 @@ static int deviceinfo_driver_probe(struct btd_service *service)
+ static struct btd_profile deviceinfo_profile = {
+ 	.name		= "deviceinfo",
+ 	.remote_uuid	= DEVICE_INFORMATION_UUID,
++	.external	= true,
+ 	.device_probe	= deviceinfo_driver_probe,
+ 	.device_remove	= deviceinfo_driver_remove
+ };
+-- 
+cgit v0.10.2
+
