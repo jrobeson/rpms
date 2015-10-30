@@ -2,8 +2,8 @@
 
 Name:    bluez
 Summary: Bluetooth utilities
-Version: 5.35
-Release: 3%{?dist}
+Version: 5.36
+Release: 1%{?dist}
 License: GPLv2+
 Group: Applications/System
 URL: http://www.bluez.org/
@@ -19,7 +19,6 @@ Patch3: 0001-obex-Use-GLib-helper-function-to-manipulate-paths.patch
 Patch4: 0002-autopair-Don-t-handle-the-iCade.patch
 Patch5: 0004-agent-Assert-possible-infinite-loop.patch
 Patch100: 0001-Enable-experimental-dbus-apis.patch
-Patch101: 0005-enable-device-info-over-dbus.patch
 
 BuildRequires: git
 BuildRequires: dbus-devel >= 1.6
